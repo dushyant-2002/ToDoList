@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: comic Sans Ms;
+    color: white;
+}
+body{
+    background-color: #feeafa;
+}
+.body{
+    /* border: 2px solid black; */
+    width: 50vw;
+    margin: 10vh auto;
+    border: 4px solid #a2d2ff;
+    border-radius: 20px;
+    background-color: #caf0f8;
+
+    
+}
+h1{
+    text-align: center;
+}
+.inp{
+    margin-top: 20px;
+    text-align: center;
+
+}
+#input{
+    color: black;
+}
+#btn{
+    background-color: orange;
+    padding: 6px 20px;
+    border-radius: 30px;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+#input,#btn{
+    font-size: 1.6rem;
+    /* color: black; */
+}
+.list{
+    /* border: 2px solid black; */
+    width: 80%;
+    margin: 10vh auto;
+    
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    justify-content: center;
+}
+ul li{
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4% 3%;
+    /* border: 2px solid red; */
+    font-size: 1.7rem;
+    align-items: center;
+    border-radius: 30px;
+    align-items: center ;
+}
+.task{
+    display: flex;
+    gap: 0 1vw;
+    align-items: center;
+    /* border: 2px solid red; */
+    max-width: 60%;
+}
+.icons{
+    display: flex;
+    gap: 0 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.task input{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.task p{
+    overflow: hidden;
+    /* border: 2px solid black; */
+    max-width: 80%;
+}
+
+.checked{
+    text-decoration: line-through;
+}
+@media screen and (max-width:768px ) {
+    #input,#btn{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:630px ) {
+    #btn{
+        /* font-size: 0.6rem; */
+        padding: 1vh 2vw;
+    }
+    #input{
+        width: 30vw;
+    }
+}
+@media screen and (max-width: 504px ) {
+    .icons{
+        gap: 0 0.1px  ;
+    }
+    .fa-solid{
+        /* color: black; */
+        /* height: 10px; */
+        scale: 50%
+        
+
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    
+    .task{
+        font-size: 1rem;
+    }
+    #btn{
+        padding: 0.6vh 2vw;
+    }
+    .task input{
+        width: 10px;
+    }
+}
